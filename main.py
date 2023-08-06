@@ -6,8 +6,8 @@ import requests
 
 class Handler:
     HOST = '0.0.0.0:5000'
-    MODELS = ['llama-2-7b-chat', 'Llama2-Chinese-7b-Chat']
-    DEFAULT_MODEL = 'Llama2-Chinese-7b-Chat'
+    MODELS = ['llama-2-7b-chat', 'Llama2-Chinese-7b-Chat', 'chinese-alpaca-2-7b-hf']
+    DEFAULT_MODEL = 'chinese-alpaca-2-7b-hf'
 
     def __init__(self):
         self.start_time = datetime.now()

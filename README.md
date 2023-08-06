@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ```bash
 cd text-generation-webui
-python server.py --model Llama2-Chinese-7b-Chat --api --extensions openai --listen
+python server.py --model chinese-alpaca-2-7b-hf --api --extensions openai --listen
 
 cd ..
 uvicorn main:app --reload --host 0.0.0.0 --port 8080
