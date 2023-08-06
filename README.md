@@ -38,5 +38,12 @@ pip install -r requirements.txt
 ## Start
 
 ```bash
-python server.py --model llama-2-7b-chat --api --extensions openai --listen
+cd text-generation-webui
+python server.py --model Llama2-Chinese-7b-Chat --api --extensions openai --listen
+
+cd ..
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
 ```
+
+## api docs
+http://{server ip}:8001/docs
